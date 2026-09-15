@@ -1,0 +1,90 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  min-height: 100vh;
+  color: white;
+  background-image: url("forest.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 30px;
+  padding: 25px;
+  background-color: black;
+}
+
+nav a {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+.start-text {
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.start-text h1 {
+  font-size: 45px;
+}
+
+.start-text p {
+  font-size: 25px;
+}
+
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+.personer {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+article img {
+  width: 300px;
+  max-width: 100%;
+  border-radius: 50%;
+}
+
+article p {
+  padding: 20px;
+  background-color: lightgray;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  background-color: black;
+  color: white;
+}
+
+.sociala-medier img {
+  width: 25px;
+  margin-right: 10px;
+  vertical-align: middle;
+  filter: invert(1);
+}
+
+@media (max-width: 700px) {
+  .personer {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+}
